@@ -1,0 +1,110 @@
+{
+  "_ghiChu": "Nhóm, nhãn phụ và tên gọi khác do người làm app bổ sung để tra cứu, không có trong tài liệu gốc của ThS.BS. Âu Dương Quốc Uy. Khóa của mỗi mục là tên tệp .docx gốc (không có đuôi).",
+
+  "nhomTheoThuTu": [
+    "Chất ma túy và chất gây ảo giác",
+    "Opioid",
+    "An thần, giải lo âu, gây ngủ",
+    "Chống loạn thần",
+    "Chống trầm cảm",
+    "Chống động kinh",
+    "Giảm đau, hạ sốt, kháng viêm",
+    "Tim mạch và huyết học",
+    "Hô hấp, ho, long đờm",
+    "Kháng histamine",
+    "Kháng sinh, kháng nấm",
+    "Tiêu hóa và chuyển hóa",
+    "Thuốc trừ sâu",
+    "Thuốc diệt cỏ",
+    "Rượu và dung môi",
+    "Khí độc và chất độc vô cơ",
+    "Alkaloid thực vật và chất kích thích"
+  ],
+
+  "chat": {
+    "METHAMPHETAMINE": {"ten": "Methamphetamine", "nhom": "Chất ma túy và chất gây ảo giác", "nhan": ["Chất ma túy", "Loạn nhịp tim", "Co giật"], "tenKhac": ["ma túy đá", "hàng đá", "meth", "ice"]},
+    "MDMA": {"ten": "MDMA", "nhom": "Chất ma túy và chất gây ảo giác", "nhan": ["Chất ma túy", "Loạn nhịp tim"], "tenKhac": ["thuốc lắc", "ecstasy", "kẹo", "3,4-methylenedioxy-N-methylamphetamine"]},
+    "CATHINONE": {"ten": "Cathinone", "nhom": "Chất ma túy và chất gây ảo giác", "nhan": ["Chất ma túy", "Co giật", "Loạn nhịp tim"], "tenKhac": ["khat", "lá khat", "muối tắm", "Catha edulis"]},
+    "KETAMIN": {"ten": "Ketamine", "nhom": "Chất ma túy và chất gây ảo giác", "nhan": ["Chất ma túy", "Thuốc mê", "Co giật"], "tenKhac": ["ke", "ketamin", "thuốc mê ketamin"]},
+    "TETRAHYDROCANNABINOL": {"ten": "Tetrahydrocannabinol", "nhom": "Chất ma túy và chất gây ảo giác", "nhan": ["Chất ma túy"], "tenKhac": ["THC", "cần sa", "bồ đà", "tài mà", "marijuana"]},
+
+    "MORPHINE": {"ten": "Morphine", "nhom": "Opioid", "nhan": ["Chất ma túy", "Ức chế hô hấp"], "tenKhac": ["morphin"]},
+    "CODEINE": {"ten": "Codeine", "nhom": "Opioid", "nhan": ["Chất ma túy"], "tenKhac": ["codein"]},
+    "METHADONE": {"ten": "Methadone", "nhom": "Opioid", "nhan": ["Chất ma túy", "Ức chế hô hấp"], "tenKhac": ["methadon"]},
+    "TRAMADOL": {"ten": "Tramadol", "nhom": "Opioid", "nhan": ["Ức chế hô hấp"], "tenKhac": ["Ultracet", "tramadol"]},
+    "MEPERIDINE": {"ten": "Meperidine", "nhom": "Opioid", "nhan": ["Ức chế hô hấp"], "tenKhac": ["pethidine", "pethidin", "Dolargan"]},
+
+    "DIAZEPAM": {"ten": "Diazepam", "nhom": "An thần, giải lo âu, gây ngủ", "nhan": ["Benzodiazepine", "Ức chế hô hấp"], "tenKhac": ["Seduxen", "Valium"]},
+    "ALPRAZOLAM": {"ten": "Alprazolam", "nhom": "An thần, giải lo âu, gây ngủ", "nhan": ["Benzodiazepine", "Ức chế hô hấp"], "tenKhac": ["Xanax"]},
+    "BROMAZEPAM": {"ten": "Bromazepam", "nhom": "An thần, giải lo âu, gây ngủ", "nhan": ["Benzodiazepine", "Ức chế hô hấp"], "tenKhac": ["Lexomil", "Lexotan"]},
+    "MIDAZOLAM": {"ten": "Midazolam", "nhom": "An thần, giải lo âu, gây ngủ", "nhan": ["Benzodiazepine", "Ức chế hô hấp"], "tenKhac": ["Dormicum", "Hypnovel"]},
+    "PRAZEPAM": {"ten": "Prazepam", "nhom": "An thần, giải lo âu, gây ngủ", "nhan": ["Benzodiazepine", "Ức chế hô hấp"], "tenKhac": ["Lysanxia"]},
+    "PHENOBARBITAL": {"ten": "Phenobarbital", "nhom": "An thần, giải lo âu, gây ngủ", "nhan": ["Barbiturate", "Chống động kinh", "Ức chế hô hấp"], "tenKhac": ["Gardenal", "luminal", "phenobarbital"]},
+
+    "CLOZAPINE": {"ten": "Clozapine", "nhom": "Chống loạn thần", "nhan": ["Co giật", "Ức chế hô hấp", "Loạn nhịp tim"], "tenKhac": ["Leponex"]},
+    "OLANZAPINE": {"ten": "Olanzapine", "nhom": "Chống loạn thần", "nhan": ["Ức chế hô hấp"], "tenKhac": ["Zyprexa"]},
+    "QUETIAPINE": {"ten": "Quetiapine", "nhom": "Chống loạn thần", "nhan": ["Co giật", "Ức chế hô hấp", "Loạn nhịp tim"], "tenKhac": ["Seroquel"]},
+    "RISPERIDONE": {"ten": "Risperidone", "nhom": "Chống loạn thần", "nhan": ["Co giật", "Ức chế hô hấp", "Loạn nhịp tim"], "tenKhac": ["Risperdal"]},
+
+    "AMITRIPTYLINE": {"ten": "Amitriptyline", "nhom": "Chống trầm cảm", "nhan": ["Hội chứng Serotonin", "Co giật", "Loạn nhịp tim"], "tenKhac": ["Elavil", "amitriptylin"]},
+    "SERTRALINE": {"ten": "Sertraline", "nhom": "Chống trầm cảm", "nhan": ["Hội chứng Serotonin", "Co giật", "Loạn nhịp tim"], "tenKhac": ["Zoloft"]},
+    "TRAZODONE": {"ten": "Trazodone", "nhom": "Chống trầm cảm", "nhan": ["Co giật", "Ức chế hô hấp", "Loạn nhịp tim"], "tenKhac": ["Trittico"]},
+    "VENFALAXINE": {"ten": "Venlafaxine", "nhom": "Chống trầm cảm", "nhan": ["Hội chứng Serotonin", "Co giật", "Loạn nhịp tim"], "tenKhac": ["Effexor", "venlafaxin"]},
+
+    "CARBAMAZEPINE": {"ten": "Carbamazepine", "nhom": "Chống động kinh", "nhan": ["Ức chế hô hấp"], "tenKhac": ["Tegretol", "carbamazepin"]},
+    "PHENYTOIN": {"ten": "Phenytoin", "nhom": "Chống động kinh", "nhan": ["Ức chế hô hấp"], "tenKhac": ["Dilantin", "phenytoin"]},
+    "LEVETIRACETAM": {"ten": "Levetiracetam", "nhom": "Chống động kinh", "nhan": ["Ức chế hô hấp"], "tenKhac": ["Keppra"]},
+
+    "ACETAMINOPHEN": {"ten": "Acetaminophen", "nhom": "Giảm đau, hạ sốt, kháng viêm", "nhan": ["Tổn thương gan"], "tenKhac": ["paracetamol", "Panadol", "Efferalgan", "Hapacol"]},
+    "IBUPROFEN": {"ten": "Ibuprofen", "nhom": "Giảm đau, hạ sốt, kháng viêm", "nhan": ["Co giật", "Ức chế hô hấp"], "tenKhac": ["Brufen", "Advil"]},
+
+    "METOPROLOL": {"ten": "Metoprolol", "nhom": "Tim mạch và huyết học", "nhan": ["Co giật", "Loạn nhịp tim"], "tenKhac": ["Betaloc", "Egilok"]},
+    "PROPRANOLOL": {"ten": "Propranolol", "nhom": "Tim mạch và huyết học", "nhan": ["Loạn nhịp tim"], "tenKhac": ["Dorocardyl", "Inderal"]},
+    "LIDOCAINE": {"ten": "Lidocaine", "nhom": "Tim mạch và huyết học", "nhan": ["Co giật", "Loạn nhịp tim"], "tenKhac": ["lidocain", "xylocaine", "lignocaine"]},
+    "SILDENAFIL": {"ten": "Sildenafil", "nhom": "Tim mạch và huyết học", "nhan": ["Loạn nhịp tim"], "tenKhac": ["Viagra"]},
+    "WARFARIN": {"ten": "Warfarin", "nhom": "Tim mạch và huyết học", "nhan": ["Xuất huyết"], "tenKhac": ["Coumadin", "thuốc chống đông kháng vitamin K"]},
+
+    "THEOPHYLLIN": {"ten": "Theophylline", "nhom": "Hô hấp, ho, long đờm", "nhan": ["Co giật", "Loạn nhịp tim"], "tenKhac": ["theophyllin", "Theostat"]},
+    "DEXTROMETHORPHAN": {"ten": "Dextromethorphan", "nhom": "Hô hấp, ho, long đờm", "nhan": ["Hội chứng Serotonin", "Co giật", "Loạn nhịp tim"], "tenKhac": ["DXM", "Atussin", "thuốc ho"]},
+    "GUAIFENESIN": {"ten": "Guaifenesin", "nhom": "Hô hấp, ho, long đờm", "nhan": [], "tenKhac": ["guaifenesin", "Terpin Codein"]},
+    "TERPIN": {"ten": "Terpin", "nhom": "Hô hấp, ho, long đờm", "nhan": [], "tenKhac": ["terpin hydrat", "Terpicod"]},
+
+    "CHLORPHENIRAMINE": {"ten": "Chlorpheniramine", "nhom": "Kháng histamine", "nhan": ["Co giật", "Ức chế hô hấp", "Loạn nhịp tim"], "tenKhac": ["chlorpheniramin", "clorpheniramin"]},
+    "CERITIZIN final": {"ten": "Cetirizine", "nhom": "Kháng histamine", "nhan": [], "tenKhac": ["cetirizin", "Zyrtec"]},
+
+    "CLINDAMYCIN": {"ten": "Clindamycin", "nhom": "Kháng sinh, kháng nấm", "nhan": [], "tenKhac": ["Dalacin"]},
+    "SULFAMETHOXAZOLE": {"ten": "Sulfamethoxazole", "nhom": "Kháng sinh, kháng nấm", "nhan": [], "tenKhac": ["Bactrim", "Biseptol", "cotrimoxazol"]},
+    "TRIMETHOPRIM": {"ten": "Trimethoprim", "nhom": "Kháng sinh, kháng nấm", "nhan": [], "tenKhac": ["Bactrim", "Biseptol", "cotrimoxazol"]},
+    "METRONIDAZOL": {"ten": "Metronidazole", "nhom": "Kháng sinh, kháng nấm", "nhan": [], "tenKhac": ["metronidazol", "Flagyl", "Klion"]},
+    "FLUCONAZOLE": {"ten": "Fluconazole", "nhom": "Kháng sinh, kháng nấm", "nhan": [], "tenKhac": ["fluconazol", "Diflucan"]},
+
+    "OMEPRAZOLE": {"ten": "Omeprazole", "nhom": "Tiêu hóa và chuyển hóa", "nhan": ["Co giật"], "tenKhac": ["omeprazol", "Losec", "Omez"]},
+    "METOCLOPRAMIDE": {"ten": "Metoclopramide", "nhom": "Tiêu hóa và chuyển hóa", "nhan": [], "tenKhac": ["metoclopramid", "Primperan"]},
+    "METFORMIN": {"ten": "Metformin", "nhom": "Tiêu hóa và chuyển hóa", "nhan": ["Nhiễm toan lactic"], "tenKhac": ["Glucophage", "metformin"]},
+
+    "ABAMECTIN": {"ten": "Abamectin", "nhom": "Thuốc trừ sâu", "nhan": ["Thuốc bảo vệ thực vật", "WHO Ib", "Ức chế hô hấp"], "tenKhac": ["avermectin"]},
+    "EMAMECTIN": {"ten": "Emamectin", "nhom": "Thuốc trừ sâu", "nhan": ["Thuốc bảo vệ thực vật", "WHO II", "Ức chế hô hấp"], "tenKhac": ["emamectin benzoate"]},
+    "CYPERMETHRIN": {"ten": "Cypermethrin", "nhom": "Thuốc trừ sâu", "nhan": ["Thuốc bảo vệ thực vật", "WHO II", "Ức chế hô hấp"], "tenKhac": ["pyrethroid"]},
+    "FENOBUCARB": {"ten": "Fenobucarb", "nhom": "Thuốc trừ sâu", "nhan": ["Thuốc bảo vệ thực vật", "WHO II", "Ức chế hô hấp"], "tenKhac": ["BPMC", "Bassa", "carbamate"]},
+    "PROFENOFOS": {"ten": "Profenofos", "nhom": "Thuốc trừ sâu", "nhan": ["Thuốc bảo vệ thực vật", "WHO II", "Ức chế hô hấp"], "tenKhac": ["Selecron", "phospho hữu cơ"]},
+    "SULFOTEP": {"ten": "Sulfotep", "nhom": "Thuốc trừ sâu", "nhan": ["Thuốc bảo vệ thực vật", "WHO Ia", "Ức chế hô hấp"], "tenKhac": ["TEDP", "phospho hữu cơ"]},
+    "THIAMETHOXAM": {"ten": "Thiamethoxam", "nhom": "Thuốc trừ sâu", "nhan": ["Thuốc bảo vệ thực vật", "WHO II"], "tenKhac": ["Actara", "neonicotinoid"]},
+    "CHLORFENAPYR": {"ten": "Chlorfenapyr", "nhom": "Thuốc trừ sâu", "nhan": ["Thuốc bảo vệ thực vật", "WHO II"], "tenKhac": ["Rampage", "Secure"]},
+    "PYRIDABEN": {"ten": "Pyridaben", "nhom": "Thuốc trừ sâu", "nhan": ["Thuốc bảo vệ thực vật", "WHO III"], "tenKhac": ["Nexter"]},
+
+    "PARAQUAT": {"ten": "Paraquat", "nhom": "Thuốc diệt cỏ", "nhan": ["Thuốc bảo vệ thực vật", "WHO II", "Xơ phổi", "Ức chế hô hấp"], "tenKhac": ["Gramoxone", "thuốc diệt cỏ cháy"]},
+    "2,4-D (2,4-Dichlorophenoxyacetic acid)": {"ten": "2,4-D", "nhom": "Thuốc diệt cỏ", "nhan": ["Thuốc bảo vệ thực vật", "WHO II", "Co giật", "Loạn nhịp tim"], "tenKhac": ["2,4-Dichlorophenoxyacetic acid", "thuốc diệt cỏ 2,4-D"]},
+    "METOLACHLOR": {"ten": "Metolachlor", "nhom": "Thuốc diệt cỏ", "nhan": ["Thuốc bảo vệ thực vật", "WHO III", "Co giật", "Loạn nhịp tim"], "tenKhac": ["Dual", "chloracetanilide"]},
+
+    "ETHANOL": {"ten": "Ethanol", "nhom": "Rượu và dung môi", "nhan": ["Ức chế hô hấp"], "tenKhac": ["rượu", "cồn", "ethyl alcohol", "BAC", "nồng độ cồn"]},
+    "METHANOL": {"ten": "Methanol", "nhom": "Rượu và dung môi", "nhan": ["Mù mắt", "Ức chế hô hấp"], "tenKhac": ["cồn công nghiệp", "methyl alcohol", "rượu methanol"]},
+
+    "CO": {"ten": "Carbon monoxide (CO)", "nhom": "Khí độc và chất độc vô cơ", "nhan": ["Thiếu oxy mô"], "tenKhac": ["CO", "khí than", "khí CO", "ngạt khí"]},
+    "CYANIDE": {"ten": "Cyanide", "nhom": "Khí độc và chất độc vô cơ", "nhan": ["Thiếu oxy mô", "Ức chế hô hấp"], "tenKhac": ["xyanua", "cyanua", "CN", "muối xyanua"]},
+
+    "STRYCHNINE": {"ten": "Strychnine", "nhom": "Alkaloid thực vật và chất kích thích", "nhan": ["WHO Ib", "Co giật"], "tenKhac": ["mã tiền", "hạt mã tiền", "strychnin"]},
+    "TETRAHYDROPALMATINE": {"ten": "Tetrahydropalmatine", "nhom": "Alkaloid thực vật và chất kích thích", "nhan": ["An thần, gây ngủ"], "tenKhac": ["THP", "bình vôi", "củ bình vôi", "rotundin"]},
+    "CAFFEINE": {"ten": "Caffeine", "nhom": "Alkaloid thực vật và chất kích thích", "nhan": ["Co giật", "Loạn nhịp tim"], "tenKhac": ["cà phê", "cafein"]},
+    "COTININE": {"ten": "Cotinine", "nhom": "Alkaloid thực vật và chất kích thích", "nhan": ["Ức chế hô hấp"], "tenKhac": ["nicotine", "thuốc lá", "chất chuyển hóa nicotine"], "ghiChu": "Cotinine là chất chuyển hóa chính của nicotine, không phải nicotine."}
+  }
+}

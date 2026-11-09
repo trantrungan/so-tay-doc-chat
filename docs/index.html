@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sổ tay Độc chất học trong Giám định pháp y</title>
+<meta name="description" content="Tra cứu cơ chế gây độc và ngưỡng nồng độ trong máu của các chất thường gặp trong giám định pháp y.">
+<meta name="theme-color" content="#f7f4ee">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="bo-qua" href="#noi-dung-chinh">Tới nội dung chính</a>
+
+<header class="dau-trang">
+  <div class="khung dau-trang-trong">
+    <div class="nhan-de">
+      <h1><a href="#/">Sổ tay Độc chất học<span> trong Giám định pháp y</span></a></h1>
+      <p class="tac-gia">ThS.BS. Âu Dương Quốc Uy</p>
+    </div>
+    <div class="dau-trang-nut">
+      <button id="nut-giao-dien" type="button" aria-label="Đổi nền sáng tối">Tối</button>
+    </div>
+  </div>
+</header>
+
+<div class="khung thanh-tim">
+  <div class="o-tim">
+    <svg class="bieu-tuong-tim" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M13.5 13.5 18 18"/></svg>
+    <input id="o-tim" type="search" autocomplete="off" spellcheck="false"
+           placeholder="Tìm tên chất, biệt dược, nhóm hoặc từ trong cơ chế…"
+           aria-label="Tìm kiếm">
+    <button id="xoa-tim" type="button" aria-label="Xóa ô tìm kiếm" hidden>×</button>
+  </div>
+  <div class="bo-loc">
+    <select id="loc-nhom" aria-label="Lọc theo nhóm"><option value="">Mọi nhóm</option></select>
+    <select id="loc-nhan" aria-label="Lọc theo nhãn"><option value="">Mọi nhãn</option></select>
+    <label class="hop-chon"><input type="checkbox" id="loc-nguong"> Chỉ chất có ngưỡng</label>
+  </div>
+</div>
+
+<main id="noi-dung-chinh" class="khung than-trang">
+  <nav class="cot-danh-sach" aria-label="Danh sách chất">
+    <p class="dem-ket-qua" id="dem-ket-qua"></p>
+    <div id="danh-sach"></div>
+  </nav>
+  <section class="cot-chi-tiet" id="chi-tiet" aria-live="polite"></section>
+</main>
+
+<div class="khay-so-sanh" id="khay-so-sanh" hidden>
+  <div class="khung khay-trong">
+    <span class="khay-nhan">Đang chọn để so sánh:</span>
+    <div class="khay-the" id="khay-the"></div>
+    <div class="khay-nut">
+      <button id="nut-so-sanh" type="button" class="chinh">So sánh</button>
+      <button id="nut-xoa-so-sanh" type="button">Bỏ hết</button>
+    </div>
+  </div>
+</div>
+
+<footer class="chan-trang">
+  <div class="khung">
+    <p>Nội dung chuyên môn: <strong>ThS.BS. Âu Dương Quốc Uy</strong>. Công cụ hỗ trợ tra cứu, không thay thế tài liệu gốc và không thay thế kết luận giám định.</p>
+    <p class="nho">Phân nhóm và tên gọi khác do người làm app bổ sung để tiện tra cứu, không thuộc nội dung tài liệu gốc. <span id="thong-tin-phien-ban"></span></p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
