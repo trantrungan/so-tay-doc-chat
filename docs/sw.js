@@ -5,6 +5,7 @@ const TEP = [
   "index.html",
   "style.css",
   "app.js",
+  "count.js",
   "manifest.webmanifest",
   "icon.svg",
   "icon-192.png",
