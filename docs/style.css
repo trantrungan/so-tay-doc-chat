@@ -90,6 +90,21 @@ button {
   padding: 7px 13px;
 }
 button:hover { background: var(--mat-chim); }
+
+/* nút sang ứng dụng cùng bộ, mở ở tab mới */
+.dau-trang-nut { display: flex; align-items: center; gap: 8px; }
+.nut-app-khac {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 13px; border-radius: var(--bo-goc);
+  border: 1px solid var(--vien-dam); background: var(--mat);
+  color: var(--muc-nhe); text-decoration: none; font-size: 14px; white-space: nowrap;
+}
+.nut-app-khac:hover { background: var(--mat-chim); color: var(--nhan); border-color: var(--nhan); }
+.nut-app-khac svg {
+  flex: none; width: 17px; height: 17px;
+  fill: none; stroke: currentColor; stroke-width: 1.8;
+  stroke-linecap: round; stroke-linejoin: round;
+}
 button.chinh { background: var(--nhan); border-color: var(--nhan); color: var(--mat); }
 html[data-nen="toi"] button.chinh { color: #16201e; }
 button.chinh:hover { filter: brightness(1.08); }
@@ -322,6 +337,8 @@ table.bang-so-sanh td.tu-vong { background: var(--tu-vong-nen); color: var(--tu-
   .chi-tiet-dau h2 { font-size: 26px; }
   .nhan-de h1 { font-size: 19px; }
   .nhan-de h1 span { display: block; font-size: 15px; }
+  .nut-app-khac span { display: none; }
+  .nut-app-khac { padding: 7px 10px; }
   .van-ban { font-size: 16.5px; }
 
   .khay-trong { flex-wrap: nowrap; gap: 9px; padding-top: 8px; padding-bottom: 8px; }
