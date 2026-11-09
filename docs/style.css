@@ -124,7 +124,7 @@ button.chinh:hover { filter: brightness(1.08); }
   font: inherit; font-size: 14px; padding: 7px 10px;
   background: var(--mat); color: var(--muc);
   border: 1px solid var(--vien-dam); border-radius: var(--bo-goc);
-  max-width: 100%;
+  flex: 1 1 165px; min-width: 0; max-width: 300px;
 }
 .hop-chon {
   display: inline-flex; align-items: center; gap: 7px;

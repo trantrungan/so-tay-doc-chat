@@ -5,7 +5,10 @@
   "use strict";
 
   var DL = null;
-  var trangThai = { q: "", nhom: "", nhan: "", chiCoNguong: false, chon: null, soSanh: [] };
+  var trangThai = {
+    q: "", nhom: "", nhan: "", chiCoNguong: false,
+    sapXep: "nhom", chon: null, soSanh: []
+  };
   var ketQua = [];
 
   var $ = function (id) { return document.getElementById(id); };
@@ -52,16 +55,20 @@
       if (trangThai.chiCoNguong && !coNguong(c)) return false;
       return tu.every(function (t) { return c.timKiem.indexOf(t) >= 0; });
     });
-    if (tu.length) {
-      /* Xếp hạng: khớp nguyên cụm ở tên đứng trước, rồi khớp rời ở tên,
-         rồi khớp nguyên cụm trong nội dung, cuối cùng là khớp rời. */
-      var cum = tu.join(" ");
-      ketQua.forEach(function (c) {
-        if (c.timTen.indexOf(cum) >= 0) c._diem = 0;
-        else if (tu.every(function (t) { return c.timTen.indexOf(t) >= 0; })) c._diem = 1;
-        else if (c.timKiem.indexOf(cum) >= 0) c._diem = 2;
-        else c._diem = 3;
-      });
+    /* Xếp hạng khi tìm kiếm: khớp nguyên cụm ở tên đứng trước, rồi khớp rời
+       ở tên, rồi khớp nguyên cụm trong nội dung, cuối cùng là khớp rời. */
+    var cum = tu.join(" ");
+    ketQua.forEach(function (c) {
+      if (!tu.length) c._diem = 0;
+      else if (c.timTen.indexOf(cum) >= 0) c._diem = 0;
+      else if (tu.every(function (t) { return c.timTen.indexOf(t) >= 0; })) c._diem = 1;
+      else if (c.timKiem.indexOf(cum) >= 0) c._diem = 2;
+      else c._diem = 3;
+    });
+
+    if (trangThai.sapXep === "ten") {
+      ketQua.sort(function (a, b) { return a.ten.localeCompare(b.ten, "vi"); });
+    } else if (tu.length) {
       ketQua.sort(function (a, b) {
         if (a._diem !== b._diem) return a._diem - b._diem;
         return DL.chat.indexOf(a) - DL.chat.indexOf(b);
@@ -120,13 +127,19 @@
         : ketQua.length + " / " + tongCong + " chất";
 
     var html = "";
-    var nhomTruoc = null;
+    var dauMucTruoc = null;
     var coTim = trangThai.q.trim().length > 0;
+    var theoTen = trangThai.sapXep === "ten";
 
     ketQua.forEach(function (c) {
-      if (!coTim && c.nhom !== nhomTruoc) {
-        nhomTruoc = c.nhom;
-        html += '<p class="ten-nhom">' + thoat(c.nhom) + "</p>";
+      /* Xếp theo nhóm: tiêu đề là tên nhóm. Xếp theo tên: tiêu đề là chữ cái
+         đầu. Khi đang tìm kiếm và xếp theo nhóm thì bỏ tiêu đề, vì kết quả
+         đã xếp theo mức độ khớp. */
+      var dauMuc = theoTen ? boDau(c.ten).charAt(0).toUpperCase()
+        : (coTim ? null : c.nhom);
+      if (dauMuc && dauMuc !== dauMucTruoc) {
+        dauMucTruoc = dauMuc;
+        html += '<p class="ten-nhom">' + thoat(dauMuc) + "</p>";
       }
       var phu = coTim && c._diem >= 2
         ? "khớp trong nội dung"
@@ -524,6 +537,12 @@
     $("loc-nguong").addEventListener("change", function () {
       trangThai.chiCoNguong = this.checked; loc(); veDanhSach();
     });
+    $("sap-xep").addEventListener("change", function () {
+      trangThai.sapXep = this.value;
+      try { localStorage.setItem("doc-chat-sap-xep", this.value); }
+      catch (e) { /* bỏ qua */ }
+      loc(); veDanhSach();
+    });
 
     $("danh-sach").addEventListener("click", function (e) {
       var n = e.target.closest(".muc-chat");
@@ -583,6 +602,14 @@
     });
     $("thong-tin-phien-ban").textContent =
       "Bản dữ liệu " + (dl.phienBan || "") + ", " + dl.soChat + " chất.";
+
+    try {
+      var sx = localStorage.getItem("doc-chat-sap-xep");
+      if (sx === "ten" || sx === "nhom") {
+        trangThai.sapXep = sx;
+        $("sap-xep").value = sx;
+      }
+    } catch (e) { /* bỏ qua */ }
 
     try {
       var ss = JSON.parse(localStorage.getItem("doc-chat-so-sanh") || "[]");
