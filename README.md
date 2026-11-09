@@ -81,6 +81,16 @@ Hoặc mở thẳng tệp `So-tay-Doc-chat.html` bằng trình duyệt, không c
 
 Dùng [GoatCounter](https://www.goatcounter.com/), không cookie, không theo dõi cá nhân, không bán dữ liệu. Bảng số liệu ở `https://sotaydocchat.goatcounter.com/`.
 
+Tệp đếm `docs/count.js` **đặt ngay trên trang này**, không tải từ `gc.zgo.at` như hướng dẫn mặc định của GoatCounter. Lý do: `gc.zgo.at` là tên miền dùng chung cho mọi khách hàng nên nằm trong danh sách chặn của nhiều trình chặn quảng cáo, khiến không đếm được lượt nào. Tải từ chính tên miền của trang thì không bị chặn.
+
+Khi GoatCounter ra bản mới, tải lại tệp gốc đè lên `docs/count.js`:
+
+```bash
+curl -o docs/count.js https://raw.githubusercontent.com/arp242/goatcounter/master/public/count.js
+```
+
+rồi chép lại khối chú thích năm dòng ở đầu tệp cũ vào đầu tệp mới.
+
 Ghi nhận hai thứ:
 
 - **Tổng lượt mở trang**, do thẻ script trong `docs/index.html` tự đếm
