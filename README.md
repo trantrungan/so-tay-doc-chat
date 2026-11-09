@@ -77,6 +77,21 @@ rồi mở http://localhost:8766
 
 Hoặc mở thẳng tệp `So-tay-Doc-chat.html` bằng trình duyệt, không cần máy chủ.
 
+## Thống kê lượt truy cập
+
+Dùng [GoatCounter](https://www.goatcounter.com/), không cookie, không theo dõi cá nhân, không bán dữ liệu. Bảng số liệu ở `https://sotaydocchat.goatcounter.com/`.
+
+Ghi nhận hai thứ:
+
+- **Tổng lượt mở trang**, do thẻ script trong `docs/index.html` tự đếm
+- **Tên chất được mở**, do hàm `ghiNhan()` trong `docs/app.js` gửi riêng, mỗi chất tính một lần cho mỗi lượt mở trang, hiện trong bảng số liệu dưới dạng `chat/<tên-chất>`
+
+**Không** ghi nhận từ khóa gõ vào ô tìm kiếm. Từ khóa chỉ nằm trong bộ nhớ trình duyệt, không bao giờ xuất hiện trên địa chỉ URL, nên không có đường nào rời khỏi máy người dùng. GoatCounter cũng không gửi phần sau dấu `#` của địa chỉ.
+
+Bản một tệp `So-tay-Doc-chat.html` **không có** phần thống kê: `scripts/dong_goi.py` gỡ thẻ script ra khi đóng gói, để bản offline không gọi ra ngoài.
+
+Máy nào bật Do Not Track thì GoatCounter tự bỏ qua.
+
 ## Lưu ý
 
 Công cụ hỗ trợ tra cứu, không thay thế tài liệu gốc và không thay thế kết luận giám định. Khi kết luận cần đối chiếu tài liệu gốc và y văn.

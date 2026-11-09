@@ -53,6 +53,9 @@ def main():
     )
     html = html.replace('<script src="app.js"></script>', "")
 
+    # Bản một tệp dùng offline thì bỏ hẳn phần thống kê: không gọi ra ngoài.
+    html = re.sub(r"<!-- Thống kê lượt truy cập.*?</script>", "", html, flags=re.S)
+
     # trong bản một tệp, hình nằm sẵn trong dữ liệu
     js = js.replace('src="hinh/\' + thoat(c.hinh) + \'"',
                     "src=\"' + (c.hinhNhung || ('hinh/' + c.hinh)) + '\"")

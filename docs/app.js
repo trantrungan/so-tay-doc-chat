@@ -477,6 +477,23 @@
     document.body.appendChild(lop);
   }
 
+  // --------------------------------------------------------- thống kê
+
+  /* Ghi nhận chất nào được mở, để biết nên bổ sung gì về sau.
+     Chỉ gửi tên chất, mỗi chất tính một lần cho mỗi lượt mở trang.
+     Không gửi từ khóa tìm kiếm, không gửi gì nếu máy bật Do Not Track. */
+  var daGhi = {};
+
+  function ghiNhan(duongDan, tieuDe) {
+    if (daGhi[duongDan]) return;
+    daGhi[duongDan] = true;
+    try {
+      if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({ path: duongDan, title: tieuDe });
+      }
+    } catch (e) { /* bỏ qua */ }
+  }
+
   // ------------------------------------------------------------ định tuyến
 
   function doiHash() {
@@ -485,12 +502,15 @@
     if (m) {
       trangThai.chon = decodeURIComponent(m[1]);
       veChiTiet(trangThai.chon);
+      var c = timChat(trangThai.chon);
+      if (c) ghiNhan("chat/" + c.slug, c.ten);
       if (window.innerWidth <= 860) {
         document.querySelector(".cot-danh-sach").dataset.an = "1";
       }
     } else if (h === "#/so-sanh") {
       trangThai.chon = null;
       veBangSoSanh();
+      ghiNhan("so-sanh", "Mở So sánh");
     } else {
       trangThai.chon = null;
       veTrangChao();
